@@ -1,0 +1,19 @@
+html {
+  direction: rtl;
+}
+body {
+  text-align: right;
+  /* تغيير hidden إلى auto للسماح بالتمرير */
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* اختياري: إخفاء شكل شريط التمرير في المتصفحات الحديثة مع الحفاظ على عمله */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  width: 100%;
+}
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
